@@ -6,4 +6,5 @@ export const approveBatch = createAction('[Release] Approve batch', props<{ id: 
 export const pauseBatch = createAction('[Release] Pause batch', props<{ id: string; actor: string }>());
 export const resumeBatch = createAction('[Release] Resume batch', props<{ id: string; actor: string }>());
 export const rollbackBatch = createAction('[Release] Rollback batch', props<{ id: string; actor: string }>());
+export const syncManifest = createAction('[Release] Sync manifest', props<{ actor: string }>());
 export const telemetryTick = createAction('[Release] Telemetry tick');
